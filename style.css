@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222;
+    color: white;
+    border-color: white;
+}
+
+#game{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    padding: 4rem 0;
+    font-size: 4.5rem;
+}
+
+.inputFields{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(58, 69, 69);
+}
+
+.inputFields input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 14px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+}
+
+button{
+    display: block;
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    font-size: 1.2rem;
+    background: green;
+    outline: none;
+    cursor: pointer;
+    color: white;
+
+}
+
+#board{
+    width: 30%;
+    min-height: 50vh;
+    margin: 10px 20px;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.cell{
+    border: 2px solid white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+
+#info{
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+}
+#winningMessage{
+    display: none;
+}
+#info div{
+    font-size: 3rem;
+    margin: 10px 0;
+    text-align: center;
+}
